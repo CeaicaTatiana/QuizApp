@@ -80,6 +80,6 @@ body.wrong {
   align-items: center;
 }
 
-.hide {
+.hide { /*Hid the content before clicking Start or Next buttons*/
   display: none;
 }
