@@ -10,9 +10,43 @@ function startGame() { //what happens when we clink on Start button
 }
 
 function setNextQuestion() { //what happens when we clink on Next button
-
 }
 
 function selectAnswer() { //what happens when we choose an answer
 
 }
+
+const questions = [
+  {
+    question: 'What is 2 + 2?',
+    answers: [
+      { text: '4', correct: true },
+      { text: '22', correct: false }
+    ]
+  },
+  {
+  question: 'Who was Russian writer?',
+  answers: [
+    { text: 'Pushkin', correct: true },
+    { text: 'Esenin', correct: true },
+    { text: 'Bulgakov', correct: true },
+    { text: 'Tolstoi', correct: true }
+  ]
+},
+{
+  question: 'Is it cold in Russia?',
+  answers: [
+    { text: 'Kinda', correct: false },
+    { text: 'YES!!!', correct: true },
+    { text: 'Um no', correct: false },
+    { text: 'IDK', correct: false }
+  ]
+},
+{
+  question: 'What is 4 * 2?',
+  answers: [
+    { text: '6', correct: false },
+    { text: '8', correct: true }
+  ]
+}
+]
