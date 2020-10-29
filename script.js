@@ -21,7 +21,18 @@ function setNextQuestion() { //what happens when we clink on Next button
 }
 
 function showQuestion(question) {
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+  questionElement.innerText = question.question
+  questionElement.innerText = question.question
+  question.answers.forEach(answer => {
+    const button = document.createElement('button')
+    button.innerText = answer.text
+    button.classList.add('btn')
+    if (answer.correct) {
+      button.dataset.correct = answer.correct
+    }
+    button.addEventListener('click', selectAnswer)
+    answerButtonsElement.appendChild(button)
+  })
 }
 
 function selectAnswer() { //what happens when we choose an answer
